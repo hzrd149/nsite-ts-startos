@@ -43,7 +43,7 @@ EXPOSE 80 3000
 ENV NSITE_PORT="3000"
 ENV NGINX_CACHE_DIR="/var/cache/nginx"
 
-COPY nsite-ts/docker-entrypoint.sh /
+COPY docker-entrypoint.sh /
 RUN chmod +x /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
