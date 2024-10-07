@@ -5,7 +5,7 @@ ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack enable
 
-RUN apk update && apk add --no-cache nginx supervisor
+RUN apk update && apk add --no-cache nginx supervisor yq
 COPY nsite-ts/supervisord.conf /etc/supervisord.conf
 
 WORKDIR /app
@@ -42,6 +42,8 @@ VOLUME [ "/var/cache/nginx" ]
 EXPOSE 80 3000
 ENV NSITE_PORT="3000"
 ENV NGINX_CACHE_DIR="/var/cache/nginx"
+ENV ENABLE_SCREENSHOTS="false"
+ENV TOR_PROXY=embassy:9050
 
 COPY docker-entrypoint.sh /
 RUN chmod +x /docker-entrypoint.sh

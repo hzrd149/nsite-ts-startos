@@ -1,6 +1,6 @@
 id: nsite-ts
 title: "nsite"
-version: 0.41.0.0
+version: 0.4.0
 release-notes: |
   Alpha
 
@@ -14,7 +14,7 @@ build: ["make"]
 description:
   short: A self hosted nsite server
   long: |
-    nsite-ts a server for accessing nsites
+    nsite-ts a server for accessing static websites on nostr
 assets:
   license: LICENSE
   icon: icon.png
