@@ -43,7 +43,7 @@ volumes:
 interfaces:
   main:
     name: User Interface
-    description: A user interface that is expected to host nsite-ts web app.
+    description: A user interface that is expected to host nsite web app
     tor-config:
       port-mapping:
         80: "80"

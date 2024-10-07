@@ -47,6 +47,3 @@ ENV TOR_PROXY=embassy:9050
 
 COPY docker-entrypoint.sh /
 RUN chmod +x /docker-entrypoint.sh
-ENTRYPOINT ["/docker-entrypoint.sh"]
-
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
