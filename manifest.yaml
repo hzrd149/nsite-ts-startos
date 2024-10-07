@@ -22,7 +22,7 @@ assets:
 main:
   type: docker
   image: main
-  entrypoint: "docker_entrypoint.sh"
+  entrypoint: "docker-entrypoint.sh"
   args: []
   mounts:
     main: /var/cache/nginx
