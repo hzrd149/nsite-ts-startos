@@ -9,7 +9,7 @@ wrapper-repo: "https://github.com/hzrd149/nsite-ts-startos"
 upstream-repo: "https://github.com/hzrd149/nsite-ts"
 support-site: "https://github.com/hzrd149/nsite-ts/issues"
 marketing-site: "https://github.com/hzrd149/nsite-ts"
-donation-url: "https://geyser.fund/project/nsite-ts"
+donation-url: ""
 build: ["make"]
 description:
   short: A self hosted nsite server
@@ -22,7 +22,7 @@ assets:
 main:
   type: docker
   image: main
-  entrypoint: "docker-entrypoint.sh"
+  entrypoint: "/docker-entrypoint.sh"
   args: []
   mounts:
     main: /var/cache/nginx
